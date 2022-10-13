@@ -12,5 +12,7 @@
  $income= 200;
 
  echo "His name is $name and his income is $income";
+ echo "<br>";
+ echo "$name is a good boy. He has $income taka";
 
 ?>

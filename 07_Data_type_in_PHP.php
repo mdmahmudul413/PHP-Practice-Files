@@ -10,6 +10,7 @@
 */
 
 // var_dump is a function which return data type and value
+// php is dynamically assigned data type based language
 $income=200;
 $name =true;
 $array= array("Moon", "Mahadi", "xyz");

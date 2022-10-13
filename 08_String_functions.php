@@ -10,12 +10,12 @@ echo strlen($name);
 echo "<br>";
 
 // string concatenation
-echo "The length of the string is ".strlen($name);
+echo "The length of the string is " . strlen($name);
 
 echo "<br>";
 
 // string word counter
-echo "Total word of this string is ".str_word_count($name);
+echo "Total word of this string is " . str_word_count($name);
 
 echo "<br>";
 
@@ -25,7 +25,7 @@ echo "Reverse of the string is ". strrev($name);
 echo "<br>";
 
 // to find the index number of a specific word
-echo "The word 'islam' start from index number ". strpos($name, "Mahmudul");
+echo 'The word "islam" start from index number '. strpos($name, "Mahmudul");
 
 echo "<br>";
 

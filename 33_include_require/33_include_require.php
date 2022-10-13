@@ -2,7 +2,7 @@
     include '_dbconnect.php';
     require '_dbconnect.php';
 
-    // difference between include and requre is include through a warning while we made a mistake in the syntex but requre through a fatal error
+    // difference between include and require is include through a warning while we made a mistake in the syntex but requre through a fatal error
 
     // include '_dbconnect1.php';
     // require '_dbconnect1.php';

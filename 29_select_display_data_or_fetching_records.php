@@ -20,12 +20,12 @@ $sql = "SELECT * FROM `contact`";
 $result = mysqli_query($conn, $sql);
 
 // Check for the data fetching success
-// if($result){
-//     echo "Data was fetching successfully.";
-// }
-// else{
-//     echo "Data was not fetching successfully. The error is --> " . mysqli_error($conn); 
-// }
+if($result){
+    echo "Data was fetching successfully.";
+}
+else{
+    echo "Data was not fetching successfully. The error is --> " . mysqli_error($conn); 
+}
 
 
 
@@ -38,34 +38,34 @@ echo $num;
 
 if($num > 0){
     // fetching in a inconvenient way 
-    /*echo "<br>";
-    $row = mysqli_fetch_assoc($result);
-    echo var_dump($row);
     echo "<br>";
-    $row = mysqli_fetch_assoc($result);
-    echo var_dump($row);
-    echo "<br>";
-    $row = mysqli_fetch_assoc($result);
-    echo var_dump($row);
-    echo "<br>";
-    $row = mysqli_fetch_assoc($result);
-    echo var_dump($row);
-    echo "<br>";
-    $row = mysqli_fetch_assoc($result);
-    echo var_dump($row);
-    echo "<br>";
-    $row = mysqli_fetch_assoc($result);
-    echo var_dump($row);
-    echo "<br>";
-    $row = mysqli_fetch_assoc($result);
-    echo var_dump($row);
-    echo "<br>";
-    $row = mysqli_fetch_assoc($result);
-    echo var_dump($row);
-    echo "<br>";
-    $row = mysqli_fetch_assoc($result);
-    echo var_dump($row);
-    echo "<br>";*/
+    // $row = mysqli_fetch_assoc($result);
+    // echo var_dump($row);
+    // echo "<br>";
+    // $row = mysqli_fetch_assoc($result);
+    // echo var_dump($row);
+    // echo "<br>";
+    // $row = mysqli_fetch_assoc($result);
+    // echo var_dump($row);
+    // echo "<br>";
+    // $row = mysqli_fetch_assoc($result);
+    // echo var_dump($row);
+    // echo "<br>";
+    // $row = mysqli_fetch_assoc($result);
+    // echo var_dump($row);
+    // echo "<br>";
+    // $row = mysqli_fetch_assoc($result);
+    // echo var_dump($row);
+    // echo "<br>";
+    // $row = mysqli_fetch_assoc($result);
+    // echo var_dump($row);
+    // echo "<br>";
+    // $row = mysqli_fetch_assoc($result);
+    // echo var_dump($row);
+    // echo "<br>";
+    // $row = mysqli_fetch_assoc($result);
+    // echo var_dump($row);
+    // echo "<br>";
 
     // fetching in a convenient way using while loop
     echo "<br>";
@@ -86,7 +86,7 @@ if($num > 0){
     // fetching individual data
     while($row = mysqli_fetch_assoc($result)){
         // echo var_dump($row);
-        echo $row['sno']. ". Hello, ". $row['name']. ". Your email is ". $row['email'];
+        echo  " Hello, ". $row['name']. ". Your email is ". $row['email'].'. '. "Your concern is ".'"'.$row['concern'];
         echo "<br>";
     }
 }

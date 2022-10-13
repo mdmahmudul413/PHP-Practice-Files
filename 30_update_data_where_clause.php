@@ -41,7 +41,7 @@ if($num > 0){
 }
 
 //updating query using WHERE clause - update single record
-$sql = "UPDATE `contact` SET `name` = 'Mahmudun' WHERE `contact`.`sno` = 13;";
+$sql = "UPDATE `contact` SET `name` = 'Mahmudun' WHERE `contact`.`name` = 'Moon';";
 $result = mysqli_query($conn, $sql);
 echo $result."<br>";//returns a boolean true
 

@@ -22,7 +22,7 @@ $result = mysqli_query($conn, $sql);
 
 // Check for the table creation success
 if($result){
-    echo "DB was successfully created.";
+    echo "Table was successfully created.";
 }
 else{
     echo "DB was not successfully created.The error is --> " . mysqli_error($conn); 

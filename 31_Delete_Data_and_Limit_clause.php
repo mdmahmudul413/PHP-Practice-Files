@@ -17,7 +17,7 @@ if(!$conn){
 }
 
 //deleting query- single record
-$sql = "DELETE FROM `contact` WHERE `name` = 'cc'";
+$sql = "DELETE FROM `contact` WHERE `name` = 'Mahmudun'";
 $result = mysqli_query($conn, $sql);
 
 if($result){

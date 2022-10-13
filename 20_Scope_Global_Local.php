@@ -16,7 +16,8 @@ echo "<br>";
 
 echo process();
 echo "<br>";
+echo "<br>";
 
 // To prints the total global variables
-// echo var_dump($GLOBALS);
+echo var_dump($GLOBALS);
 ?>
